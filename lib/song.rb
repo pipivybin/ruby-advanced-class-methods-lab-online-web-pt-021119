@@ -43,7 +43,7 @@ end
   end
 
   def self.alphabetical
-    self.all.collect do
+    self.all.sort_by {|x| x.name}
 
       |x| x.name.sort
 

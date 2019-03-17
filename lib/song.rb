@@ -39,5 +39,10 @@ end
     end
   end
 
+  def self.alphabetical
+    self.all.collect do
+      |x| x.name.sort
+    end
+  end
 
 end

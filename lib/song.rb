@@ -33,6 +33,7 @@ class Song
       |x| if x.name == name
         return x
         else false
+        end
   end
 end
 

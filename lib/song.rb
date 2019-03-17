@@ -44,6 +44,7 @@ end
   def self.alphabetical
     self.all.collect do
       |x| x.name.sort
+      binding.pry
     end
   end
 

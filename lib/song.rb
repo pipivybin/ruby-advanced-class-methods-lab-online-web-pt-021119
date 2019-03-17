@@ -32,7 +32,7 @@ class Song
     self.all.each do
       |x| if x.name == name
          x
-      else puts false
+      else  false
       end
   end
 end

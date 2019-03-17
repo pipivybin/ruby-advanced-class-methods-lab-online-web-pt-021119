@@ -44,10 +44,6 @@ end
 
   def self.alphabetical
     self.all.sort_by {|x| x.name}
-
-      |x| x.name.sort
-
-    end
   end
 
 end

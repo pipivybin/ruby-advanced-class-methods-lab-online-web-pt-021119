@@ -28,7 +28,6 @@ class Song
     song_new = self.new_by_name(name)
     song_new.save
     song_new
-    binding.pry
   end
 
   def self.find_by_name(name)

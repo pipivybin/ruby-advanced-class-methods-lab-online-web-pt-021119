@@ -31,7 +31,7 @@ class Song
   def self.find_by_name(name)
       if self.all.find { |x| x.name == name } == nil
         false
-      else self.all.find { |x| x.name == name }  
+      else self.all.find { |x| x.name == name }
   end
 end
 
@@ -39,6 +39,7 @@ end
     if self.find_by_name(name) == nil
       self.create_by_name(name)
     else self.find_by_name(name)
+    end
   end
 
 

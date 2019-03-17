@@ -30,15 +30,18 @@ class Song
 
   def self.find_by_name(name)
     self.all.each do
-      |x| if x.name == name
+      |x| if self.empty?
+        false
+      else
+      if x.name == name
         return x
-      else puts "falsey value"
+      else puts false
         end
   end
 end
 
   def self.find_or_create_by_name(name)
-    
+
   end
 
 

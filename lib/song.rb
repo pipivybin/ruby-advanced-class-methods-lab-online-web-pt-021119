@@ -28,7 +28,11 @@ class Song
     song_new
   end
 
-
+  def self.find_by_name(name)
+    self.all.each do 
+      |x| x.name == name
+  end
+end
 
 
 end
